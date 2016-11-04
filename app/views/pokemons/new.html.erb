@@ -1,0 +1,7 @@
+<form action="/pokemons" method="POST">
+	<%= simple_form_for @pokemons :pokemons => 'pokemons#create' do |f| %>
+  		<%= f.input :name %>
+  		<%= f.button :submit %>
+	<% end %>
+	
+</form>
